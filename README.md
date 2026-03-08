@@ -29,7 +29,6 @@ Compile the program:
 gcc pacman.c -o pacman
 ```
 
-
 Run the game:
 
 ```
@@ -51,6 +50,7 @@ Through this project I practiced:
 
 ## Demo
 
+https://github.com/user-attachments/assets/5c51cd72-eef2-495d-bedd-c99108746e5e
 
 ## Course Context
 
