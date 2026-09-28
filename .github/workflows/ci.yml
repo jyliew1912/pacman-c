@@ -1,0 +1,23 @@
+name: C Build & Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Compile C Program
+        run: |
+          gcc -Wall -Wextra -std=c11 -O2 pacman.c -o pacman -lm
+
+      - name: Verify Binary
+        run: |
+          test -f pacman && echo "Pacman binary successfully built."
