@@ -1,2 +1,15 @@
+# Executables
+pacman
+pacman.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Debug symbols & IDE files
+*.dSYM/
 .vscode/
-*.exe
+.idea/
+.DS_Store
