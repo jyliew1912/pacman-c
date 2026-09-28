@@ -641,7 +641,7 @@ bool playAgain(int *times, int *level, int *count)
         return false;
     }
 
-    *times++;
+    (*times)++;
     if(*count == *level)
     {
         *level = (*level == 3) ? 1 : *level + 1;
