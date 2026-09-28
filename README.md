@@ -2,7 +2,7 @@
 
 [![C11](https://img.shields.io/badge/Language-C11-blue.svg?logo=c)](https://en.cppreference.com/w/c/11)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Build Status](https://github.com/jyliew1912/YOUR_REPO_NAME/actions/workflows/ci.yml/badge.svg)](https://github.com/jyliew1912/pacman-c/actions/workflows/ci.yml)
+[![Build Status](https://github.com/jyliew1912/pacman-c/actions/workflows/ci.yml/badge.svg)](https://github.com/jyliew1912/pacman-c/actions/workflows/ci.yml)
 
 A lightweight, terminal-based grid navigation game implemented in **C11**. The project showcases procedural grid generation, dynamic 2D array allocation via heap double pointers, boundary collision validation, and turn-based entity updates without external dependencies.
 
