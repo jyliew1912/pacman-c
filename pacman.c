@@ -109,12 +109,18 @@ int input(const char *question)
     return output;
 }
 
-char** allocate(int length, int width)
-{
+char** allocate(int length, int width) {
     char **map = (char**)malloc(length * sizeof(char*));
-    for(int i = 0; i < length; i++)
-    {
+    if (!map) {
+        perror("Failed to allocate map rows");
+        exit(EXIT_FAILURE);
+    }
+    for (int i = 0; i < length; i++) {
         map[i] = (char*)malloc(width * sizeof(char));
+        if (!map[i]) {
+            perror("Failed to allocate map column");
+            exit(EXIT_FAILURE);
+        }
     }
     return map;
 }
